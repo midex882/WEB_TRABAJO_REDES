@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>ATAQUES A REDES</title>
+    <style>
+        body{
+            width: 100%;
+            margin: 0px;
+            background-image: linear-gradient(
+            to bottom,
+            #000000 0%,
+            #0f0f0f 22%, 
+            #141414 45%,
+            #1b1b1b 50%,
+            #202020 55%,
+            #202020 78%,
+            #2d2d2d 100%
+            );
+            color: white;
+            font-family: 'Roboto Mono', monospace;
+            display: flex;
+            justify-content: center;
+            
+        }
+        header{
+            background-color: #030308;            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+        }
+        header a{
+            color:  rgb(16, 78, 107);
+            text-decoration: none;
+            margin-right: 2rem;
+            font-size: 1.5rem;
+            font-family: 'Roboto Mono', monospace;
+        }
+        #logo{
+            width: 15%;
+        }
+        main{
+            margin-top: 8rem;
+            width: 80%;
+        }
+        main>div{
+            padding: 4rem;
+        }
+        main>div>h2:nth-last-of-type(1){
+            background-image: linear-gradient(
+            -225deg,
+            #771212 0%,
+            #a11717 29%,
+            #ff0101 67%,
+            #9b0a0a 100%
+            );
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+        }
+
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
+        p,ul,ol,a{
+                text-align: justify;
+        }
+        #imgmiguel{
+            width: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img  id="logo" src="img/logo.gif" alt="">
+        <div id="secciones">
+            <a href="">RICHARD</a>
+            <a href="">HERRAMIENTAS DE PROTECCIÓN</a>
+            <a href="">DDoS</a>
+            <a href="">MAN IN THE MIDDLE</a>
+        </div>
+    </header>
+    <main>
+        <div id="SecRichard">
+            <h2>TIPOS DE ATAQUES</h2>
+            <section>
+                <h3>Malware</h3>
+                <p>
+                    El término malware viene de la composición de las palabras “malicious” (malicioso, malvado) y
+                    “software” (programa o aplicación).
+                </p>
+                <p>
+                    Un malware es cualquier programa o código malicioso que sea dañino para los sistemas
+                    informáticos de una persona, empresa u organización.
+                </p>
+                <h4>Características de un malware</h4>
+                <p>
+                    Como los malware son tan cambiantes y su propagación tan variada, no es fácil determinar las
+                    características de un ataque o infección de forma específica.
+                </p>
+                <ul>
+                    <li>
+                        Polimorfos: poseen múltiples formas de representarse según su código de
+                        programación, lo que los hace difíciles de rastrear.
+                    </li>
+                    <li>
+                        Residentes o no Residentes: Dependiendo de cómo se ejecute el código del virus;
+                        si el malware se activa cuando el archivo que lo porta está abierto, entonces es no
+                        residente. De lo contrario se considera residente al malware que está activo
+                        constantemente.
+                    </li>
+                    <li>
+                        Sigilosos: Algunos malware se adjuntan a ciertos archivos específicos del
+                        computador, lo que les permite ocultarse y multiplicarse más rápidamente.
+                    </li>
+                    <li>
+                        Trabajan en conjunto con otros malware: Algunos de estos virus hacen trabajo en
+                        equipo para potenciar su ataque.
+                    </li>
+                    <li>
+                        Silenciosos: pueden ocultar los cambios que van realizando en el dispositivo
+                        mientras completan una tarea u objetivo, donde el sistema no mostrará indicios de
+                        infección hasta estar comprometida su seguridad.
+                    </li>
+                    <li>
+                        Resistentes al formateo: pueden permanecer latentes en el disco duro a pesar de
+                        haber sido formateado el dispositivo. Esto lo logra trasladando parte de su código a
+                        otras áreas de memoria como el CMOS del equipo.
+                    </li>
+                    <li>
+                        Camaleónicos: suelen simular programas comerciales para crear confianza en el
+                        usuario y poder infectar equipos al ser ejecutados.
+                    </li>
+                    <li>
+                        Retrovirus: tienen la característica de anular los sistemas de antivirus, dejando el
+                        equipo vulnerable a otros ataques de malware.
+                    </li>
+                    <li>
+                        Mutables: pueden alterar su propio código para evadir los escaneos de software del
+                        antivirus.
+                    </li>
+                </ul>
+                <h4>Algunos ejemplos de equipo infectado por malware</h4>
+                <ul>
+                    <li>
+                        Páginas web emergentes con publicidad o ofertas que pueden ser llamativas.
+                    </li>
+                    <li>
+                        Lentitud inexplicable de su equipo de computación.
+                    </li>
+                    <li>
+                        Actividades aleatorias involuntarias en el dispositivo sin su consentimiento o acción.
+                    </li>
+                    <li>
+                        Reseteos de los equipos de forma inesperada.
+                    </li>
+                    <li>
+                        Bloqueo de acciones o funciones como eliminar un archivo, activar diagnósticos de
+                        virus, etc.            
+                    </li>
+                    <li>
+                        Algún programa o aplicación que aparece instalado sin previo aviso.
+                    </li>
+                    <li>
+                        Correos enviados o mensajes enviados de forma automática con contenido no
+                        autorizado.
+                    </li>
+                    <li>
+                        Fallas en algún programa o archivo sin justificación.
+                    </li>
+                    <li>
+                        Modificación de nombres de los archivos.
+                    </li>
+                    <li>
+                        Activación de micrófono o cámara sin previo aviso.
+                    </li>
+                </ul>
+                <h3>Tipos de malware</h3>
+                <h4>Spyware</h4>
+                <p>
+                    Son programas diseñados para indagar las preferencias de navegación de los usuarios. No
+                    se propaga como un virus regular, sino que se tiende a descargar e instalar un código
+                    específico oculto en algún programa o archivo bajado por el usuario. Su función es localizar
+                    la información de seguridad del usuario como contraseñas, correos, datos bancarios, entre
+                    otros.
+                </p>
+                <h4>Ransomware</h4>
+                <p>
+                    Es un malware muy específico en sus acciones, que se encarga de afectar dispositivos o
+                    equipos, bloqueando operaciones o encriptando archivos o programas, para impedir su
+                    normal funcionamiento. Este malware solicita un rescate monetario para devolver el control
+                    del equipo, que suele ser en criptomonedas.
+                </p>
+                <p>
+                    En este caso, se puede mencionar lo ocurrido recientemente a la empresa petrolera
+                    Colonial Pipeline, donde se pagó un rescate de 75 bitcoins, equivalentes a más de 4
+                    millones de dólares para poder liberar sus operaciones de un ataque de Ransomware. Y a
+                    un mes del hecho, han podido rastrear y recuperar poco más de la mitad de lo pagado por
+                    la empresa a los ciberdelincuentes.
+                </p>
+                <h4>Rootkit</h4>
+                <p>
+                    Este malware instala algunos programas que permiten acceder de forma remota a ciertos
+                    dispositivos y hackear información. Este virus puede ocultarse en el sistema operativo y
+                    desactivar alertas de antivirus u otros sistemas de seguridad para evitar su detección.
+                </p>
+                <h4>Virus</h4>
+                <p>
+                    Es un malware sencillo que actúa tal como el principio de su nombre, infectando al huésped
+                    y multiplicándose hasta colapsar a su hospedador, y a su vez se va transmitiendo hacia
+                    otros equipos que estén conectados y vulnerables en el entorno. Son fáciles de detectar y
+                    eliminar pero muy contagiosos en redes sin la debida protección.
+                </p>
+                <h4>Gusanos o Worm</h4>
+                <p>
+                    Estos malware se reproducen y propagan al igual que un virus. Sin embargo, un gusano no
+                    requiere un programa o huésped para propagarse, estos se esparcen en las redes sin ayuda de
+                    un programa o hacker
+                </p>
+                <h4>Troyano</h4>
+                <p>
+                    Es un malware que simula ser un programa o archivo confiable para que los usuarios
+                    puedan descargarlo e instalarlo voluntariamente. Este archivo descarga código de
+                    programación en sí, que permiten a un hacker poder robar información financiera y personal
+                    del usuario.
+                </p>
+                <h3>Otros tipos de Ataques Informáticos</h3>
+                <h4>Doxing</h4>
+                <p>
+                    Es un término utilizado para describir la práctica en Internet de investigación y publicación
+                    de información privada sobre un individuo o una organización, generalmente con el
+                    propósito de intimidar, humillar o amenazar.
+                </p>
+                <p>
+                    Actualmente esta práctica se ha combinado con el ransomware, de tal manera que si la
+                    empresa se niega a pagar el rescate por desencriptar la información esta será publicada en
+                    Internet generando perjuicio económico y reputacional.
+                </p>
+                <h4>Phishing</h4>
+                <p>
+                    El phishing no es un software, se trata de diversas técnicas de “Ingeniería social” como la
+                    suplantación de identidad, con el fin de obtener datos privados de las víctimas, como por
+                    ejemplo las contraseñas o datos bancarios.
+                </p>
+                <p>
+                    Los medios más utilizados son el correo electrónico, mensajería o llamadas telefónicas,
+                    mediante el cual el atacante se hace pasar por alguna entidad u organización conocida,
+                    solicitando datos confidenciales, para posteriormente utilizar esos datos en beneficio propio.
+                </p>
+                <p>
+                    A la fecha, el phishing es uno de los ataques más habituales dirigidos tanto a miembros de
+                    una empresa, como a personas naturales mediante una práctica llamada spear fishing, en el
+                    cual se busca usurpar la identidad en perjuicio de una persona seleccionada por su alto
+                    nivel de vulnerabilidad.
+                </p>
+                <h4>Denegación de servicio distribuido (DDoS)</h4>
+                <p>
+                    Los ataques de DDoS consisten en realizar tantas peticiones a un servidor, como para
+                    lograr que este colapse o se bloquee. Existen diversas técnicas, entre ellas la más común
+                    es el uso de botnets, equipos infectados con troyanos y gusanos en los cuales los usuarios
+                    no saben que están formando parte del ataque.
+                </p>
+                <p>
+                    De todos los tipos de ataques informáticos este es uno de los más conocidos y temidos, ya
+                    que es muy económica su ejecución y muy difícil de rastrear al atacante.
+                </p>
+                <p>
+                    De esta forma, la eficacia de los ataques DDoS se debe a que no tienen que superar las
+                    medidas de seguridad que protegen un servidor, pues no intentan penetrar en su interior,
+                    solo bloquearlo generando severas pérdidas económicas al negocio objetivo.
+                </p>
+                <h3>Referencias</h3>
+                <p><a href="https://www.optical.pe/blog/tipos-de-ataques-informaticos-y-previsiones-para-el-2022/" target="_blank">Tipos de ataques informáticos y previsiones para el 2022</a></p>
+                <p><a href="https://www.optical.pe/blog/que-es-el-malware-y-como-puede-afectar-a-tu-empresa/" target="_blank">¿Qué es el malware y cómo puede afectar a tu empresa?</a></p>
+            </section>
+        </div>
+        <div id="SecInma">
+            <h2>HERRAMIENTAS DE PROTECCIÓN</h2>
+            <h3>FIREWALL</h3>
+            <p>
+                Un firewall es un sistema cuya finalidad es proteger, por un lado, se encarga de la 
+                proteccción de nuestra red privada, identificando si es un usuario autorizado, en este
+                 caso le dejaría acceder, o si no lo es, bloqueandole en acceso.
+                <br>
+                También monotoriza el tráfico entrante y saliente, permitiendo o bloqueando también en
+                 este caso en base a unas reglas definidas. El firewall es uno de los sitemas más importantes
+                  de defensa desde hace 25 años, actuando como barrera entre las redes internas y las externas.
+                <br>
+                El firewall puede ser hardware (suele instalarse en los routers, de hecho, la mayoría de los
+                 routers cuentan con un firewall ya instalado), software (muchos sistemas operativos cuentan 
+                 con uno instalado por defecto) o ambos.
+                <br>
+                Métodos de filtración:  
+            </p>
+            <ul>
+                <li>
+                    A través de políticas: permiten el bloqueo de determinados tipos de tráfico de red. El firewall
+                     suspende cualquier petición de comunicación que no provenga de la red interna, además desde 
+                     fuera de esta red interna lo que se va a ver es la dirección IP del cortafuegos.
+                </li>
+                <li>
+                    Filtro anti-spam: protege contra spam, phishing (suplantación de identidad) através de 
+                     detección de patrón recurrente, ya que analiza millones de patrones a diario para proteger
+                      todos los mensajes que estén infectados, el anti splan se aplica a la ip y está basado en
+                       la reputación, eliminando más de 80% del correo electrónico no deseado. 
+                </li>
+                <li>
+                    Antivirus: este servicio lo incorporan algunos firewall y es la primera linea de defensa para
+                     proteger la red interna contra ataques de internet. 
+                </li>
+                <li>
+                    Filtro por contenido: Los administradores, a través de especificar ciertas reglas, hacen que el
+                     firewall bloquee algunos contenidos web sin necesidad de hacerlo manualmente una por una. El 
+                     firewall es capaz de distinguir los contenidos que sean problemáticos. 
+                </li>
+                <li>
+                    Servicio gestionado WAP: permite controlar dispositivos con conexión inalambrica y administrar 
+                    su uso para usuarios autorizados o servicios. 
+                </li>
+                <li>
+                    Servicios DPI: inspección profunda de paquetes, permite controlar aplicaciones especificas (troyanos)
+                     que pueden infiltrarse en la red. Su función es añadir una segunda capa que revisa el contenido profundo
+                      de los paquetes de información y le da al administrador la libertad de bloquear programas especificos 
+                      que no estén permitidos.
+                </li>
+            </ul>
+            <p>Tipos:</p>
+            <ul>
+                <li>
+                    Firewall proxy: es un tipo de firewall que actua en fases iniciales actuando como puerta de enlace entre una
+                     red y otra en una aplicación determinada. Incluyen otras funciones como contenido de caché y evitan conexiones
+                      directas desde fuera.
+                </li>
+                <li>
+                    Firewall de inspección de estados: permite bloquear el acceso en base a ciertas restricciones que se basan en
+                     estado, protocolo, puerto... Además, monotoriza toda la actividad desde que se abre la conexión hasta que esta
+                      conexión se cierra. El filtro lo configura el administrador. 
+                </li>
+                <li>
+                    Firewall para gestión unificada de amenazas:  Este sistema es un combo entre el firewall de inspección de estados
+                     y un antivirus, aunque suele incluir más servicios como la gestión en la nube, se catacteriza por lo fácil que 
+                     es usarlo. 
+                </li>
+                <li>
+                    Firewall de última generación: los firewalls han evolucionado a lo largo de estos 25 años, muchos ya no se limitan
+                     a filtrar, sino que incluyen otra serie de características, a parte de las que ya hemos mencionado, contra el malware
+                      avanzado y ataques en la capa de aplicación como pueden ser detección de aplicaciones y control para visualizar y 
+                      bloquear aplicaciones que puedan traer riesgos, actualizar rutas para añadir futuras fuentes de información y prevención
+                       de intrusiones. 
+                </li>
+                <li>
+                    NGFW que se centra en amenzas, este firewall cuenta con las funcionalidades que hemos descrito anteriormente, tanto del 
+                    tradicional, como del avanzado pero también incluye detección y soluciones para amenazas avanzadas como: conocer qué 
+                    sectores corren más riesgo, reacción rápida ante ataque, reducir el tiempo entre detección y limpieza o simplificar 
+                    su gestión. 
+                </li>
+            </ul>
+            <h3>DATA LOSS PREVENTION</h3>
+            <p>
+                Un DLP es un Sistema de prevención de pérdida de datos que tiene como objetivo prevenir las fugas de información producidas
+                 por los propios trabajadores de las empresas.
+                <br>
+                Si es cierto que los propios CEOs de las compañias implementan medidas de protección tales como utilizar permisos para que
+                 los usuarios solo accedan a los recursos que les sean necesarios según su función pero también es cierto que estas medidas
+                  no cubren acciones como hacer copias en USB, enviar documentación a través de servicios de mensajería o subir información en la nube.
+                <br>
+                El DLP utiliza la inteligencia artificial y el machine learning para aprender la tipología de los documentos y su confidencialidad
+                 a través de las interacciones de los usuarios con el contenido.
+                Monotorizan la red de la empresa para evitar estas fugas antes de que se produzcan, enviando una alerta al usuario para informarle
+                de que esa acción concreta no cumple con la política de seguridad ni la confidencialidad de los datos de la compañía. Además, el
+                DLP es capaz de comprobar a qué correos corporativos se ha accededido y comprobrar y deterner la transmisión de datos desde la
+                organización a redes sociales o la nube.
+                Tipos:
+            </p>
+            <ul>
+                <li>
+                    Network DLP: Disponibles en las plataformas de software y hardware, integrada en los puentos de salida de datos de la red 
+                    corporativa. Una vez instalada, monitorea, rastrea y genera informes de todos los datos de tráfico en la red, este tipo es el
+                     ideal para explorar todo el contenido que pasa por los puertos y protocolos y ayuda a garantizar la seguridad de la información
+                      de la organización ya que indica qué datos están siendo utilizados, por quién y su destino, esta información se guarda en una base de datos. 
+                </li>
+                <li>
+                    Storage DLP: Es un sistema que permite observar archivos confidencias almacenados y compartidos por los usuarios autorizados, de
+                     esta manera, identifica puntos sensibles y previene el filtrado de información, muy útil para controlar los datos que estén alamacenados
+                      en una nube. 
+                </li>
+                <li>
+                    Endpoint DLP:Se utiliza para controlar los datos almacenados en dispositivos extraíbles, un USB por ejemplo, este tipo de DLP se
+                     instala en todas las estaciones de trabajo y dispositivos utilizados por los empleados de la empresa para supervisar e impedir la
+                      salida de datos por dispositivos extraíbles, aplicaciones para compartir o áreas de transferencia. 
+                </li>
+            </ul>
+            <p>
+                La implementación de estas soluciones tiene que ir precedida de un estudio que se centre en las necesidades del negocio donde se
+                 implementen, de esta forma, se podrán observar los puntos de vulnerabilidad, lo que posibilitará el establecimiento de las mejores
+                  soluciones. Tener un dominio sobre el ambiente y entender los diferntes puntos de DLP y sus aplicaciones son los primeros pasos a dar
+                   en la implementación de soluciones para evitar la pérdida de datos. 
+            </p>
+            <h3>CASO CONCRETO</h3>
+            <p>
+                El conocido Youtuber, Nate Gentile, sufrió no hace mucho un ataque Ddos por parte de un hacker que le pedía una cierta cantidad de dinero
+                 para parar el ataque y que su web de cursos volviese a estar activa.
+                <br>
+                Para protegerse de estos ataques, Nate, contaba con el servicio de la empresa Cloudflare, que ofrece servicios de defensa contra este tipo
+                 de ataques. Su sistema actua como un proxy inverso, un proxy inverso es un servidor proxy que recupera recursos desde uno o más servidores
+                  y los devuelve al usuario como si el proxy fuese el propio servidor, en definitiva, se encarga de actuar entre el dispositivo que almacena
+                   tu página web y el dispositivo del usuario que intenta acceder a ella.
+                <br>
+                Cuando el usuario escribe el nombre de la página a la que intenta acceder, esa búsqueda no va directamente al servidor donde está
+                 almacenada esa web, sino que pasa primero por este sistema, normalmente el sistema redirecciona al servidor donde se encuentra
+                  la web para que el usuario acceda a ella.
+                <br>
+                Este servicio también proporciona cierta información, como analíticas, que aportan datos como el número de personas que se
+                 conectan o desde donde se producen estas conexiones.
+                Además, este servicio también almacena la caché de nuestra web, almacena documentos para reducir el ancho de banda consumido,
+                 la carga de los servidores y el tiempo de descarga.
+                <br>
+                Cloudflare también tiene su propio firewall. Pero el ataque fue realizado por profesionales lo que hizo que, en un primer momento,
+                 el firewall fallase, ya que las peticiones parecerán muy reales.
+                Es muy importante saber distinguir entre una petición real y una que no lo es, ya que si no es así podrás cortar la conexión
+                 a un usuario real que está tratando de acceder a tu web, y,.en este caso que se trata de una página de cursos, podía perjudicar
+                  más que ayudar.
+                Al ver que el firewall no era suficiente para mantener el ataque, decicidieron utilizar otro sistema de defensa, el JavaScript
+                 Challenge, que lo que hace es que tu dispositivo tenga que cargar un temporizador durante unos segundos antes de cargar la
+                  web definitiva, aunque puede ser que no sea suficiente.
+                <br>
+                Después de llevar a cabo todo esto, y ver que cada vez que ellos intentaban algo para mitigar, el hacker aumentaba
+                 el ataque, decidieron realizar un bloqueo por países, si tenemos una herramienta que nos muestre el origen de las
+                  conexiones que nos están realizando los ataques Ddos esta herramienta nos será muy útil porque nos puede ayudar
+                   a ver desde qué países se está produciendo el ataque. Además, hay que tener en cuenta que era una clase de cursos
+                    impartidos en español, por lo que optaron por bloquear aquellos países que no eran hispano hablantes, aunque el
+                     hacker se dio cuenta y aumento los ataques provenientes de Latino América y esta solución no puede ser nuestra
+                      solución definitiva, sino que tiene que ser temporal.
+                <br>
+                Como última solución, optaron por activar el filtro antibot, este filtro analiza las peticiones una por una buscando
+                 patrones. Estos filtros suelen utilizar una IA capaz de distinguir las peticiones buenas de las malas, basándose en
+                  los históricos de la web. A cada petición que llega a la página web le asigna una puntuación de 0 a 100, donde 0 
+                  es claramente un bot y 100 claramente un usuario, aunque muy pocas tienen una petición de 0 o 100. Al principio 
+                  parecía que esto tampoco iba a ser suficiente, pero cuando pasó un lapso de tiempo la IA aprendió a diferencia 
+                  peticiones y mitigó hasta el 80% del ataque, lo que causó que el hacker se retirase.
+            </p>
+            <p>REFERENCIAS:
+                <br>
+                1. https://idgrup.com/firewall-que-es-y-como-funciona/#:~:text=Un%20firewall%2C%20tambi%C3%A9n%20llamado%20cortafuegos,ordenadores%20de%20una%20misma%20red.
+                <br>
+                2. https://www.cisco.com/c/es_es/products/security/firewalls/what-is-a-firewall.html
+                <br>
+                3. https://ostec.blog/es/seguridad-perimetral/dlp-que-es-y-como-funciona/
+                <br>
+                4. https://www.nunsys.com/dlp-data-loss-prevention/
+                <br>
+                5. https://www.youtube.com/watch?v=_IPeU2upbaw&ab_channel=NateGentile
+            </p>            
+        </div>
+        <div id="SecJose">
+            <h2>DDoS</h2>
+            <h3>¿QUÉ SON?</h3>
+            <p>Un DDoS es un Ataque de Denegación de Servicio Distribuido, 
+                o Distributed Denial of Service Attack, en español. Como bien indica su nombre
+                el objetivo de este ataque es provocar que la victima no puede proporcionar
+                servicio a los clientes. Para hacer esto, las técnicas más comunes se basan
+                en la fuerza bruta, como ahora veremos.</p>
+
+            <h3>¿QUÉ ES UN DoS?</h3>
+            <p>Como sabemos, los DDoS son ataques informáticos que tienen el objetivo
+                de arrebatar a su víctima la capacidad de proveer servicio, pero estos son
+                solo un tipo de DoS, que quiere decir Ataque de Denegación de Servicio. aunque
+                puede parecer que son lo mismo, la realidad es que no lo son; al menos, no
+                exactamente.
+
+                Para entender la diferencia, debemos entender cómo funcionan estos ataqyues.
+                Los DoS, en general, se basan en inundar un servidor/es con inmensas cantidades
+                de paquetes, peticiones, etc. de manera que el servidor en cuestión se ve 
+                incapacitado frente al volumen de trabajo que se le presenta, por lo que, o bien
+                falla y se cae, o simplemente es incapaz de prestar servicio a los usuarios legítimos
+                por culpa del ataque.
+
+                En un DoS básico, esto se hace desde un único equipo, y el hacker o atacante
+                usa ese equipo para mandar una cascada de peticiones o ataques, pero en un
+                DDoS, el hacker hace uso de muchos más equipos. No es que el hacker tenga que poseer
+                todos ellos, o al menos, no en el sentido literal de la palabra, sino que se trata
+                de equipos infectados con malware diseñado específicamente para este propósito. Con
+                estos equipos, puede multiplicar el flujo de peticiones n veces los equipos que haya
+                infectado, y aunque esto puede no ser efectivo contra grandes empresas, puede demostrar
+                ser tremendamente efectivo contra otras no tan potentes. Es por esto que, normalmente,
+                se usan DDoS, y no DoS a secas, dado que los últimos son mucho menos efectivos.
+            </p>
+            <h3>TIPOS DE DDoS</h3>
+            <ul>
+                <li>
+                    <h4>ATAQUE YO-YO</h4>
+                    <p>Este ataque, que lleva el nombre del juguete con forma de bobina de cuerda,
+                        se trata de uno de los más sencillos y complicados de detectar, pero también uno
+                        de los menos efectivos. El ataque Yo-yo funciona, unicamente, en equipos con sistema
+                        de autoescalado, que es un sistema que hace que el servidor se administre a sí mismo
+                        los recursos que usa en cada momento, de manera que puede asignarse menos recursos cuando
+                        el flujo es menor, y más recursos cuando el flujo es mayor. 
+
+                        Para efectuar este ataque, el hacker creará un ciclo en el que manda muchas peticiones
+                        seguida al servidor, ocasionando un escalado de recursos para más, y después reduce mucho
+                        este flujo, de manera que el servidor se reescala a menos.
+
+                        El objetivo de este ataque es no llamar demasiado la atención, y obligar al servidor
+                        a consumir más recursos necesarios, y por tanto más dinero en energía, durante mucho tiempo.
+                    </p>
+                </li>
+                <li>
+                    <h4>ATAQUE DE CAPA DE APLICACIÓN</h4>
+                    <p>Como sabemos, la capa de aplicación, en el modelo OSI, es la capa que define las aplicaciones que utilizará
+                        el usuario para comunicarse con la red. Este ataque hace uso de esta capa para ralentizar o impedir el 
+                        funcionamiento de un servidor o red de servidores.
+                        
+                        Para ello, lo que se hace es inundar cierta función de una página web o servicio en específico, como la función
+                        de búsqueda de una tienda online, y, de nuevo, sobrecargar el servidor, llegando a poder impedir el acceso
+                        a los clientes, o inhabilitando esa función en particular. Esto puede suponer, para una empresa, pérdidas
+                        económicas muy graves, dependiendo de la duración del ataque.
+                    </p>
+                </li>
+                <li>
+                    <h4>ATAQUE HTTP slow POST</h4>
+                    <p>Este es un ataque en el que el hacker envía una cabecera HTTP POST completamente legítima, con una etiqueta que
+                        declara la longitud del mensaje como muy grande, y procede a enviar el paquete con una velocidad mínima, de apenas
+                        un byte por minuto.
+
+                        Al hacer esto a la vez con varias cabeceras, el servidor intenta hacer caso a la eqtiqueta de longitud, y espera
+                        a recibir el mensaje completo, pero al tomar esto muchísimo tiempo, y al estar utilizándose este método múltiples veces,
+                        el servidor se sobrecarga, y las velocidades de conexión para los demás usuarios se vuelven ridículas, pudiendo impedir
+                        completamente el correcto funcionamiento del servidor/página/servicio.
+
+                        Este ataque se conoce desde 2009, pero es terriblemente dificil de detectar, porque incluso si se rechazan paquetes con
+                        mucho peso, el hacker puede reducir el tamaño muchísimo, y el ataque seguiría siendo efectivo. Normalmente, no es difícil
+                        de detener, pero hasta que se detecta, puede pasar una cantidad de tiempo peligrosa para la empresa.
+                    </p>
+                </li>
+                <li>
+                    <h4>ATAQUE NUKE</h4>
+                    <p>Este ataque consiste en el envío repetido de paquetes erróneos a una víctima, obligándola a consumir gran cantidad de recursos
+                        y tiempo en resolver complejos algoritmos intentando desencriptar u ordenar la información incorrecta, de manera que la máquina
+                        se vaya ralentizando poco a poco hasta parar su funcionamiento completamente.
+
+                        Un ejemplo de este tipo de ataque es el WinNuke, usado en windows 95. Este ataque enviaba paquetes erróneos al puerto TCP 139, y
+                        aprovechando una vulnerabilidad del netbios handler, un string fuera de banda provocaba un crasheo total, y windows lanzaba una
+                        pantalla azul de la muerte.
+                    </p>
+                </li>
+                <li>
+                    <h4>ATAQUE DoS PERMANENTE</h4>
+                    <P>
+                        Este ataque está dirigido únicamente a hardware, pero con el objetivo de destruirlo o, como mínimo, inhabilitarlo hasta que se lleve a
+                        cabo una reparación o sustitución. La ejecución es la siguiente:
+
+                        Primero, es necesario identificar vulnerabilidades del equipo que se desea atacar, ya sea un ordenador, un servidor, una impresora o
+                        todo a la vez. Una vez hecho esto, se deberán aprovechar estas vulnerabilidades para pentrar el aparato hasta el punto de poder reemplazar
+                        su firmware por uno corrupto o defectuoso. Una vez hecho este reemplazo, es muy probable que, al volver a usarse, los equipos sucumban a
+                        averías no solo de software, sino de hardware, quedando brickeadas o directamente rotas.
+
+                        Existe un método legítimo de hacer esto, y se llama flashing. Consiste en reemplazar, como hemos dicho antes, el firmware de un dispostivo,
+                        y puede usarse para múltiples aplicaciones; desde arreglar una impresora rota hasta piratear una wii. La diferencia aquí es que el phlashing
+                        se hace con el objetivo de provocar fallos o averías.
+                    </P>
+                </li>
+                <li>
+                    <h4>ATAQUE MIRAI BOTNET</h4>
+                    <p> Para este ataque, se requiere un tipo de gusano relativamente sencillo que se propaga por redes, discos duros, internet y cualquier
+                        medio disponible. El objetivo del gusano es infectar dispositivos poco protegidos, como pueden ser smart watches, coches autónomos, frigoríficos
+                        inteligentes o cualquier dispositivo IoT. Normalmente, el usuario del esclavo no se percatará de lo ocurrido hasta que el ataque se lleve a cabo.
+
+                        Este gusano es desplegado por un hacker, y éste ha de esperar paciéntemente a que el gusano haya creado el número deseado de "esclavos", que es como
+                        se denomina a los dispositivos infectados por el gusano. Una vez esa cifra se ha alcanzado, el hacker puede hacer que todos ellos se conecten
+                        a un mismo Proveedor de Internet, sobrecargando su red, y provocando una caída de la misma.
+
+                        En octubre de 2016, un ataque Mirai se efectuó sobre Dyn, que es el proveedor de internet para sitios como Netflix, Twitter y otros servicios mundiales.
+                        Fue muy efectivo, y ambas plataformas quedaron inutilizadas durante varias horas. Aunque puede ser tremendamente dañino para las empresas a nivel económico,
+                        no lo es, en absoluto, a nivel de software.
+                    </p>
+                </li>
+            </ul>
+
+            
+
+        </div>
+        <div id="SecMiguel">
+            <h2>MAN IN THE MIDDLE</h2>
+            <div class="imagenM">
+                <div class="logitos">         
+                    <img id="imgmiguel" src="imgM/descarga.png" alt="">
+                </div>
+                <div class="principalmmm">
+                    <img src="imgM/titulo2.svg" alt="">
+                </div>
+                <div class="titu2">
+                    <h3>¿QUÉ ES MAN IN THE MIDDLE?</h3>
+                </div>
+                <article class="textom">
+                    <p>Significa hombre en medio, esto quiere decir que una persona con unos conocimientos básicos de informática puede hacer como intermediario de esa información
+                    de datos que estamos transfiriendo, estamos recibiendo o entrando algún lugar como facebook, instagram, a nuestra cuenta bancaria. Está persona nos engalla 
+                    creyendo que le estamos enviando esa información a nuestro receptor o a la parte inversa entrando en ese canal, y de eso es difícil darnos cuenta, vamos a
+                    llamarlo como hacker a esta persona que nos está robando la información él lo que hace en realidad es toda esa información le llega a él y después se la
+                    envía a la persona que le tiene que llegar sin que nosotros nos inmutamos porque le está llegando esa información vamos a poner unos ejemplos más claros
+                    como puede hacer está persona eso y después vamos a decir cómo evitar para que está persona no se pueda colar fácilmente a nuestra información.</p> 
+                </article>
+                <div class="principalmmm">
+                    <img src="imgM/titulo4.png" alt="">
+                </div>
+                <div class="titu2">
+                    <h3>¿CÓMO ACCEDE EL HACKER?</h3>
+                </div>
+                <article class="textom2">
+                    <p>Vamos hablar sobre 4 casos de uso que podriamos hacer nosotros o el hacker y esas opciones son las siguientes:</p>
+                    <h4>DHCP SPOOFING</h4>
+                    <p>Cuando nosotros nos conectamos a un router nos suele asignar el dhcp el router una ip y la puerta de enlace por donde se va enviar esa información lo que suele hacer el
+                    hacker es conseguir hacer un dhcp más rápido que el router o no más rápido pero ya si un ordenador de estos ve que hay un dhcp más cercano se va a conectar a nosotros,
+                     seguidamente nostros actuaremos como falso router pero nostros tambien enviaremos esa información al router para no hacer ninguna sospecha y esa
+                     información va a llegar a nosotros de esa manera tendríamos acceso a todo lo que está haciendo ese ordenador de envío de paquetes o cualquier cosa.</p>
+                    <h4>ARP CACHE POSIONG</h4>
+                    <p>Esto es un protocolo podriamos decir que asigna a cada mac una dirección IP para identificar los dispositivos. Podriamos coger a un dispositivo y decirle que la dirreción
+                        de puerta de enlace, y la ip de router somos nosotros, esto se quedaría en su cache del dispositivo, esto sería más hardware que lógico.
+                    </p>
+                    <h4>DNS SPOOFING</h4>
+                    <p>Podriamos hacer que a los dhcp de los dispositivo, y tambien creer a los dns tambien de esos dispositvos que esos dns están en nuestro dispostivo para
+                    que crean que esas dns que se conectan a un dominio somos nosotros como Santander o cualquier plataforma para que llegue toda esa información a nosotros.</p>
+                    <h4>Simalar un punto de acceso a WIFI</h4>
+                    <p>Podríamos crear un punto de acceso, esto quiere decir de wifi que la gente se conectara nuestro wifi por el simple hecho de que es wifi gratis, esto como hemos comentando
+                    antes podríamos cambiar esos dns o dhcp de cualquier pagina para que se creen que está enviando la información a esa plataforma, con esto podríamos hacer llegar toda esa 
+                    información a un dispositivo nuestro claves correos etc...
+                    </p>
+                </article>
+                <div class="principalmmm">
+                    <img src="imgM/nom3 (2).gif" alt="">
+                </div>
+                <div class="titu2">
+                    <h3>¿COMO PODRIAMOS EVITAR ESTO?</h3>
+                </div>
+                <article class="evitar">
+                    <ul>
+                        <li>Evitar conectarse a redes wifi públicas y la difusión de información personal a través de estas redes.</li>
+                        <li>Tener actualizado el software de todos los dispositivos, especialmente el del sistema operativo y el navegador web.</li>
+                        <li>Utilizar contraseñas seguras y en la medida de los posible activar la autenticación en dos pasos.</li>
+                        <li>Acceder a sitios web seguros cuya URL comience por https.</li>
+                        <li>A nivel empresarial, sería interesante contar con dos redes. Una de ellas destinada al uso propio y otra habilitada para invitados, restringiendo así el acceso a la red corporativa y otros servicios.</li>
+                        <li>Tener cuidado con los posibles ataques de correo electrónico conocidos como phishing y evitar abrir enlaces procedentes de fuentes desconocidas. En caso de sospecha, realizar una limpieza de los equipos afectados antes de transmitir información de carácter sensible.</li>
+                        <li>Asegurarse que los servicios o apps que uses para comunicarse utilizan el cifrado de extremo a extremo.</li>
+                        <li>Si eres administrador, actualiza el software de los servidores.</li>
+                    </ul>
+                </article>
+                <div class="logitos">
+                    <img src="imgM/descarga.png" alt="">
+                    <img src="imgM/descarga.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
