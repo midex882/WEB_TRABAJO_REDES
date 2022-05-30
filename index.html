@@ -591,6 +591,51 @@
                     </p>
                 </li>
             </ul>
+            <h3>DEFENSA</h3>
+            <ul>
+                <li>
+                    <h4>FILTRADO UPSTREAM</h4>
+                    <p>Todo el tráfico dirigido a la víctima es pasado primero por un "centro de limpieza", ya sea cambiando la ip de la victima para redirigir el tráfico, proxis,
+                        direcciones cruzadas, de manera que se separa el tráfico "malo" del legítimo. La víctima necesita tener una conexión estable y muy fuerte a internet,
+                        a no ser que se encuentre en el mismo edificio o la misma localización que el "centro de limpieza" que hemos mencionado.
+
+                        El principal problema es que los DDoS pueden, sin mucho problema, sobrecargar la mayoría de los firewall de cualquier sistema, y por tanto, es
+                        necesario un nivel adicional de seguridad, y es este de aquí. Aunque parezca innecesariamente complicado o caro, no es innecesario, y es más rentable
+                        de lo que puede aparentar, teniendo en cuenta el coste de que un ataque de este tipo puede tener para la economía de una empresa.
+                    </p>
+                </li>
+                <li>
+                    <h4>FIREWALLS</h4>
+                    <p>Aunque hemos dicho que, normalmente, se ven sobrepasados por los DDoS, sí es posible que un firewall con las reglas correctas definidas pueda
+                        bloquear un ataque completamente, y esto es bloqueando el tráfico a determinados puertos, bloqueando el tráfico de determinadas IP, si es que estas
+                        se localizan a tiempo, o ayudando con el filtrado de paquetes.
+                    </p>
+                </li>
+                <li>
+                    <h4>SWITCHES</h4>
+                    <p>Muchos switches, hoy en día, tienen limitadores del tráfico individual, además de escaneo profundo de paquetes y filtrado de los mismos, además de
+                        poder redirigir el flujo entre los dispositivos conectados al switch, si se configura para ello. De esta forma, y aunque pueden sobrecargarse, suelen
+                        ser extremadamente útiles a la hora de proteger frente a DoS.
+                    </p>
+                </li>
+                <li>
+                    <h4>DoS DEFENSE SYSTEM (DDS)</h4>
+                    <p> El sistema DDS posee la capacidad de detectar tanto los ataques DoS basados en conexiones, como el de capa de aplicacion, o de inundación, como
+                        el de slow rate, que tienen un contenido legítimo pero mala intención. DDS es capaz de detectar con gran efectividad los ataques DoS, y ayudar a repelerlos
+                        de las maneras mas eficientes posibles.
+                    </p>
+                </li>
+                <li>
+                    <h4>SISTEMAS DE PREVENCIÓN DE INTRUSIÓN (IPS)</h4>
+                    <p>Aunque este tipo de sistemas solo son efectivos si los ataques tienen ciertas características asociadas con ellos, su función principal es filtrar
+                        los paquetes con contenido legítimo pero mala intención, como en el apartado anterior. Un sistema IPS tiene la potencia para identificar correctamente
+                        un ataque DoS y actuar como un interruptor, bloqueando todo el tráfico malicioso.
+
+                        Si existe un problema con estos sistemas, es que, en ocasiones, no pueden detectar correctamente los ataques DoS por centrarse en la identificación de
+                        contenido, lo cual puede llevar a la entrada de mucho tráfico mal intencionado.
+                    </p>
+                </li>
+            </ul>
 
             
 
