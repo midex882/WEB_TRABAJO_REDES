@@ -25,6 +25,10 @@ body{
             align-items: center;
             position: fixed;
         }
+        header div{
+            display: flex;
+            flex-wrap: wrap;
+        }
         header a{
             color:  rgb(16, 78, 107);
             text-decoration: none;
